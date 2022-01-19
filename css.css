@@ -11,6 +11,7 @@ html, body {
     justify-content: center;
 }
 .top {
+    display: flex;
     top: auto;
     border: 2px solid #ff9c9c;
     text-align: center;
@@ -18,10 +19,15 @@ html, body {
     height: 55px;
 }
 .help {
-
+    border: 2px solid #e5bdff;
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 h1 {
     margin: 0;
+    margin-left: 125px;
     padding-top: 5px;
     color: #d7dadc;
     font-size: 38px;
@@ -29,20 +35,28 @@ h1 {
     letter-spacing: 2px;
 }
 .stats {
-
+    border: 2px solid #e5bdff;
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 90px;
 }
 .settings {
-
+    border: 2px solid #e5bdff;
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 .mid {
     border: 2px solid #bdbeff;
     position: fixed;
-    width: 350px;
+    width: 400px;
     height: 400px;
     top: 50%;
     left: 50%;
     margin-top: -280px; /* Negative half of height. */
-    margin-left: -175px; /* Negative half of width. */
+    margin-left: -200px; /* Negative half of width. */
 }
 .wordle {
 
