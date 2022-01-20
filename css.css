@@ -13,17 +13,19 @@ html, body {
 .top {
     display: flex;
     top: auto;
-    border: 2px solid #ff9c9c;
+    border-bottom: 1px solid #575757;
     text-align: center;
     width: 520px;
     height: 55px;
 }
 .help {
-    border: 2px solid #e5bdff;
-    width: 30px;
-    height: 30px;
+    width: 32px;
+    height: 32px;
     margin-top: 10px;
     margin-left: 10px;
+}
+.help:hover {
+    border: 1px solid #575757;
 }
 h1 {
     margin: 0;
@@ -35,39 +37,91 @@ h1 {
     letter-spacing: 2px;
 }
 .stats {
-    border: 2px solid #e5bdff;
-    width: 30px;
-    height: 30px;
+    width: 32px;
+    height: 32px;
     margin-top: 10px;
     margin-left: 90px;
 }
+.stats:hover {
+    border: 1px solid #575757;
+}
 .settings {
-    border: 2px solid #e5bdff;
-    width: 30px;
-    height: 30px;
+    width: 32px;
+    height: 32px;
     margin-top: 10px;
     margin-left: 10px;
 }
+.settings:hover {
+    border: 1px solid #575757;
+}
 .mid {
-    border: 2px solid #bdbeff;
     position: fixed;
-    width: 400px;
-    height: 400px;
+    width: 420px;
+    height: 430px;
     top: 50%;
     left: 50%;
-    margin-top: -280px; /* Negative half of height. */
-    margin-left: -200px; /* Negative half of width. */
+    margin-top: -290px;
+    margin-left: -210px; /* Half of width. */
 }
-.wordle {
-
+.midrow {
+    display:flex;
+    margin-left: 0px;
+    margin-top: 10px;
+    gap: 8px;
+    margin-left: 8px;
+}
+.tile {
+    border: 2px solid #575757;
+    width: 60px;
+    height: 60px;
 }
 .bot {
     position: absolute;
     bottom: 0;
-    border: 2px solid #008b13;
-    height: 200px;
-    width: 490px;
+    height: 205px;
+    width: 500px;
 }
-.keyboard {
-    width: max-content;
+.botrow {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin: 5px;
+}
+.key {
+    background-color: #838383;
+    color: #ffffff;
+    border-radius: 5px;
+    width: 45px;
+    height: 60px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 18px 0;
+}
+.key:hover {
+    background-color: #505050;
+}
+.key:active {
+    background-color: #838383;
+}
+.bigkey {
+    background-color: #838383;
+    color: #ffffff;
+    border-radius: 5px;
+    width: 68px;
+    height: 60px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 18px 0;
+}
+.bigkey:hover {
+    background-color: #505050;
+}
+.bigkey:active {
+    background-color: #838383;
 }
